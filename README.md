@@ -4,7 +4,7 @@ To measure the costs of a meeting (e.g. a general assembly)
 
 ![Screenshot meeting-o-meter](img/meeting-o-meter.png)
 
-Did you ever attend a meeting that went on and on. And everybody had to say something to make it last even longer. Well if this a recurring event in your life, maybe the meeting-o-meter offers a solution for you. By specifying the number of people, and their hourly rate, you can measure the cost of each second that is (potentially) wasted. At hte least, it gives everyone an insight in the costs of attending such a meeting.
+Did you ever attend a meeting that went on and on. And everybody had to say something to make it last even longer. Well if this a recurring event in your life, maybe the meeting-o-meter offers a solution for you. By specifying the number of people, and their hourly rate, you can measure the cost of each second that is (potentially) wasted. At the least, it gives everyone an insight in the costs of attending such a meeting.
 
 ## Using it
 
