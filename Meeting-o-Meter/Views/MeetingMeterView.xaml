@@ -1,0 +1,137 @@
+﻿<UserControl x:Class="mom.Views.MeetingMeterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:mom.ViewModels"
+             xmlns:models="clr-namespace:mom.Models"
+             xmlns:userControls="clr-namespace:mom.UserControls"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:converters="clr-namespace:mom.Converters"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}"
+          d:DataContext="{d:DesignInstance viewModels:MeetingMeterViewModel}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Viewbox Grid.Row="0"
+                 Margin="10"
+                 VerticalAlignment="Top">
+            <Path Data="M54.69809,30.121998L60.742161,30.121998C65.71067,30.121998 69.234039,34.072765 69.720917,39.005401 69.806915,39.820556 69.951408,40.795822 70.122002,41.864994L54.307507,41.864994C53.989819,39.655143 53.650032,37.902424 53.479336,36.471328
+    53.317944,34.28368 52.682568,32.260139 51.831001,30.46842 52.711166,30.228704 53.669529,30.121998 54.69809,30.121998z
+
+    M9.3383408,30.121998L15.382538,30.121998C16.195023,30.121998 16.960609,30.228704 17.677999,30.293909 16.781013,32.140331 16.213223,34.234276 15.976327,36.507831 15.902029,37.951931 15.603834,39.673446
+    15.24844,41.864998L0,41.864998C0.15099843,40.799724 0.27990222,39.827057 0.35680592,39.005401 0.80211037,34.067562 4.3684554,30.121998 9.3383408,30.121998z
+
+    M30.945234,25.476997L38.606567,25.476997C44.856426,25.476997 49.319828,30.502996 49.965717,36.708793 50.115311,38.137092 50.394005,39.905292 50.712997,41.864994
+    L23.467081,41.864994 18.909,41.864994
+    C19.198093,39.914493 19.450788,38.151394 19.586084,36.708793 20.164272,30.497797 24.665474,25.476997 30.945234,25.476997z
+
+    M57.71875,9.832999C62.989632,9.832999 67.322998,14.262906 67.322998,19.434911 67.322998,24.802328 62.989632,29.041998 57.71875,29.041998 52.45047,29.041998 48.117001,24.802328 48.117001,19.434911 48.117001,14.262906 52.45047,9.832999 57.71875,9.832999z
+
+    M12.358915,9.832999C17.629707,9.832999 21.963001,14.262906 21.963001,19.434911 21.963001,24.802328 17.629707,29.041998 12.358915,29.041998 7.0907135,29.041998 2.756,24.802328 2.756,19.434911 2.756,14.262906 7.0907135,9.832999 12.358915,9.832999z
+
+    M34.775799,5.6843419E-14C41.434643,-6.0969901E-07 46.945,5.3463313 46.945,12.091248 46.945,18.843675 41.434643,24.171997 34.775799,24.171997 28.028555,24.171997 22.604,18.843675 22.604,12.091248 22.604,5.3463313 28.028555,0 34.775799,0z"
+                  Stretch="Uniform"
+                  Fill="#FF000000"
+                  Margin="0,0,0,0"
+                  RenderTransformOrigin="0.5,0.5" />
+        </Viewbox>
+
+        <StackPanel Grid.Row="0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Orientation="Horizontal">
+            <mui:ModernButton x:Name="Stop"
+                              Margin="5"
+                              IconHeight="20"
+                              IconWidth="20"
+                              EllipseDiameter="40"
+                              ToolTip="Stop the meeting and reset all data."
+                              IconData="M0,0L64.992,0 64.992,64.992 0,64.992z" />
+            <mui:ModernButton x:Name="Pause"
+                              Margin="5"
+                              IconHeight="20"
+                              IconWidth="20"
+                              EllipseDiameter="40"
+                              ToolTip="Pause the meeting, and continue it later."
+                              Visibility="{Binding IsPlaying, Converter={converters:ConvertBoolToVisibility}}"
+                              IconData="M27.270001,0L44.310001,0 44.310001,48.643002 27.270001,48.643002z M0,0L17.040001,0 17.040001,48.643002 0,48.643002z" />
+            <mui:ModernButton x:Name="Play"
+                              Margin="5"
+                              IconHeight="20"
+                              IconWidth="20"
+                              EllipseDiameter="40"
+                              ToolTip="Start the meeting, and start measuring costs."
+                              Visibility="{Binding IsPlaying, Converter={converters:ConvertBoolToVisibility}, ConverterParameter=False}"
+                              IconData="F1M-224.553,1265L-246.174,1283.52 -267.792,1302.04 -267.792,1265 -267.792,1227.97 -246.174,1246.49 -224.553,1265z" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="0 0 0 50">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        ToolTip="Cost of the meeting."
+                        Margin="0 0 0 20">
+                <TextBlock Text="{Binding CurrencySymbol}"
+                           FontSize="48"
+                           Foreground="White"
+                           FontWeight="Bold" />
+                <TextBlock Text="{Binding MeetingCosts, StringFormat='N0'}"
+                           FontSize="48"
+                           Foreground="White"
+                           FontWeight="Bold" />
+            </StackPanel>
+            <TextBlock FontSize="32"
+                       Foreground="White"
+                       ToolTip="Duration of the meeting."
+                       FontWeight="Bold">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{}{0:D2}:{1:D2}:{2:D2}">
+                        <Binding Path="ElapsedMeetingTime.Hours" />
+                        <Binding Path="ElapsedMeetingTime.Minutes" />
+                        <Binding Path="ElapsedMeetingTime.Seconds" />
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </StackPanel>
+
+        <ListBox Grid.Row="1"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 x:Name="Tariffs">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"
+                               HorizontalAlignment="Center" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal"
+                                d:DataContext="{d:DesignInstance models:Tariff}"
+                                Margin="10 5"
+                                RenderTransformOrigin="0.5, 0.5">
+                        <!--<StackPanel.LayoutTransform>
+                            <ScaleTransform ScaleX="2"
+                                            ScaleY="2" />
+                        </StackPanel.LayoutTransform>-->
+                        <TextBlock Text="{Binding Title}" />
+                        <TextBlock Text=": " />
+                        <TextBlock Text=""
+                                   FontFamily="WebDings" />
+                        <!--<TextBlock Text="{Binding DataContext.CurrencySymbol, RelativeSource={RelativeSource AncestorType=ListBox}}" />-->
+                        <userControls:NumericUpDown Value="{Binding ParticipantsCount, Mode=TwoWay}"
+                                                    Width="75"
+                                                    MinValue="0" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

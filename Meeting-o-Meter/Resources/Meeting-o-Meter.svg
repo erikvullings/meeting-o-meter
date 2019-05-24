@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   width="100px"
+   height="100px"
+   viewBox="0 0 100 100"
+   enable-background="new 0 0 100 100"
+   xml:space="preserve"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Meeting-o-Meter.svg"
+   inkscape:export-filename="C:\Users\erikv_000\Downloads\Meeting-o-Meter.png"
+   inkscape:export-xdpi="921.59998"
+   inkscape:export-ydpi="921.59998"><metadata
+   id="metadata25"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs23" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview21"
+   showgrid="false"
+   inkscape:zoom="2.36"
+   inkscape:cx="50"
+   inkscape:cy="50"
+   inkscape:window-x="737"
+   inkscape:window-y="75"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Capa_1" />
+<ellipse
+   cx="50.501999"
+   cy="50.328999"
+   rx="19.58"
+   ry="15.816"
+   id="ellipse3"
+   sodipodi:cx="50.501999"
+   sodipodi:cy="50.328999"
+   sodipodi:rx="19.58"
+   sodipodi:ry="15.816"
+   transform="matrix(1.1895199,0,0,1.1895199,-9.4737213,-9.4736264)" />
+<path
+   d="m 50.600603,4.2272639 c 2.826299,0 5.116125,2.2910153 5.116125,5.1161246 0,2.8286785 -2.289826,5.1173155 -5.116125,5.1173155 -2.827489,0 -5.117315,-2.288637 -5.117315,-5.1173155 0,-2.8262989 2.289826,-5.1161246 5.117315,-5.1161246 z"
+   id="path5"
+   inkscape:connector-curvature="0" />
+<path
+   d="M 59.775369,29.332082 V 19.275881 c 0,-2.205371 -1.790227,-3.996788 -3.996786,-3.996788 H 45.422622 c -2.207748,0 -3.996786,1.791417 -3.996786,3.996788 v 10.056201 h 18.349533 z"
+   id="path7"
+   inkscape:connector-curvature="0" />
+<path
+   d="m 50.600603,70.642918 c 2.826299,0 5.116125,2.291016 5.116125,5.116126 0,2.828678 -2.289826,5.117314 -5.116125,5.117314 -2.827489,0 -5.117315,-2.288636 -5.117315,-5.117314 0,-2.8263 2.289826,-5.116126 5.117315,-5.116126 z"
+   id="path9"
+   inkscape:connector-curvature="0" />
+<path
+   d="M 59.775369,95.747737 V 85.691535 c 0,-2.20537 -1.790227,-3.996787 -3.996786,-3.996787 H 45.422622 c -2.207748,0 -3.996786,1.791417 -3.996786,3.996787 v 10.056202 h 18.349533 z"
+   id="path11"
+   inkscape:connector-curvature="0" />
+<path
+   d="m 85.953134,37.286401 c 2.825111,0 5.116125,2.291015 5.116125,5.116125 0,2.828679 -2.291014,5.117315 -5.116125,5.117315 -2.827489,0 -5.118504,-2.288636 -5.118504,-5.117315 0,-2.826299 2.291015,-5.116125 5.118504,-5.116125 z"
+   id="path13"
+   inkscape:connector-curvature="0" />
+<path
+   d="M 95.127901,62.391219 V 52.335018 c 0,-2.205371 -1.791417,-3.996788 -3.997976,-3.996788 H 80.775154 c -2.208938,0 -3.997976,1.791417 -3.997976,3.996788 v 10.056201 h 18.350723 z"
+   id="path15"
+   inkscape:connector-curvature="0" />
+<path
+   d="m 14.022866,37.286401 c 2.82511,0 5.116125,2.291015 5.116125,5.116125 0,2.828679 -2.289826,5.117315 -5.116125,5.117315 -2.82749,0 -5.1173151,-2.288636 -5.1173151,-5.117315 0,-2.826299 2.2898251,-5.116125 5.1173151,-5.116125 z"
+   id="path17"
+   inkscape:connector-curvature="0" />
+<path
+   d="M 23.197632,62.391219 V 52.335018 c 0,-2.205371 -1.790227,-3.996788 -3.996786,-3.996788 H 8.8448854 c -2.207749,0 -3.9967869,1.791417 -3.9967869,3.996788 V 62.391219 H 23.197632 z"
+   id="path19"
+   inkscape:connector-curvature="0" />
+</svg>

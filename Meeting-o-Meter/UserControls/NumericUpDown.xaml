@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="mom.UserControls.NumericUpDown"
+             x:Name="ucNumericUpDown"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:userControls="clr-namespace:mom.UserControls"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d"
+             d:DesignHeight="46"
+             d:DesignWidth="200"
+             Height="23"
+             Loaded="ucNumericUpDown_Loaded">
+    <UserControl.Resources>
+        <userControls:BtnHeightConverter x:Key="BtnHeightConverter" />
+        <userControls:DecimationConverter x:Key="DecimationConverter" />
+        <userControls:BtnShowConverter x:Key="BtnShowConverter" />
+        <userControls:BtnShowGridConverter x:Key="BtnShowGridConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Stretch"
+                 Padding="-1"
+                 Name="tbValue"
+                 Height="{Binding ElementName=ucNumericUpDown, Path=Height}"
+                 Grid.ColumnSpan="{Binding ElementName=ucNumericUpDown, Path=ShowButtons, Converter={StaticResource BtnShowGridConverter}}">
+        </TextBox>
+        <StackPanel Orientation="Horizontal"
+                    Grid.Column="1"
+                    Visibility="{Binding ElementName=ucNumericUpDown, Path=ShowButtons, Converter={StaticResource BtnShowConverter}}">
+            <mui:ModernButton x:Name="btnDown"
+                              Click="btnDown_Click"
+                              Margin="0 0 5 0"
+                              IconData="M0,0L53.333,0 53.333,8.888 0,8.888z" />
+            <mui:ModernButton x:Name="btnUp"
+                              Click="btnUp_Click"
+                              IconData="M19.833,0L32.5,0 32.5,19.833999 52.334,19.833999 52.334,32.500999 32.5,32.500999 32.5,52.333 19.833,52.333 19.833,32.500999 0,32.500999 0,19.833999 19.833,19.833999z" />
+            <!--<Button Height="{Binding ElementName=tbValue, Path=Height, Converter={StaticResource BtnHeightConverter}}"
+                    Name="btnUp"
+                    Width="23"
+                    Click="btnUp_Click">
+                <Image Style="{StaticResource disableImageButton}"
+                       VerticalAlignment="Stretch"
+                       HorizontalAlignment="Stretch"
+                       Source="/NumericUpDown;component/Images/arrow-up.png" />
+            </Button>
+            <Button Height="{Binding ElementName=tbValue, Path=Height, Converter={StaticResource BtnHeightConverter}}"
+                    Name="btnDown"
+                    Width="23"
+                    Click="btnDown_Click">
+                <Image Style="{StaticResource disableImageButton}"
+                       VerticalAlignment="Stretch"
+                       HorizontalAlignment="Stretch"
+                       Source="/NumericUpDown;component/Images/arrow-down.png" />
+            </Button>-->
+        </StackPanel>
+    </Grid>
+</UserControl>
+
+<!--
+	<c> Copyright eisiWare - Tobias Eiseler 2011
+
+	This file is part of NumericUpDown.
+
+    NumericUpDown is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    NumericUpDown is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with NumericUpDown.  If not, see <http://www.gnu.org/licenses />.
+
+-->

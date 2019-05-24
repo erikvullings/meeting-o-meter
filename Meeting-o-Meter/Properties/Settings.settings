@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="mom.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TariffGroups" Type="System.String" Scope="User">
+      <Value Profile="(Default)">B;85;C;103;D;133;E;153;F;175</Value>
+    </Setting>
+    <Setting Name="CurrencySymbol" Type="System.Char" Scope="User">
+      <Value Profile="(Default)">€</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
